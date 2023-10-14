@@ -1,0 +1,232 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: #fff;
+  -webkit-text-stroke: 0.25px white;
+
+}
+
+a {
+  color: #00B7FF;
+}
+
+.nav-item{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#indexPage{
+  display: flex;
+  /* background-color: #111; */
+}
+
+#indexImage{
+  margin-left: 2.4%;
+  height: 600px;
+  width: 600px;
+  background-color: red;
+  background-image: url("../images/indexBg.jpeg");
+  /* background-image: url(https://media.istockphoto.com/id/1455946612/photo/computer-hacker.jpg?s=612x612&w=0&k=20&c=kgtnSnVCqc-c5WG3jPXykH4RLTkIqmFJKSC_DjXNuLg=); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top ;
+}
+
+#indexImage img{
+  height: 300px;
+  width: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#indexContent{
+  margin-left: 5%;
+  background-color: #00000071;
+  /* color: #fff; */
+  height: 600px;
+  width: 600px;
+  align-items: center;
+  text-align: center;
+  background-image: url(https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y29kaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60);
+  background-repeat: no-repeat;
+  filter: blur(0.1px);
+  background-size: cover;
+  background-position: center;
+}
+
+#indexContent h1{
+  color: black;
+  margin-top: 25%;
+  font-size: 70px;
+  font-weight: 900;
+  margin-bottom: 5%;
+  z-index: 10;
+}
+
+#indexContentPara{
+  font-size: 25px;
+  color: #fff;
+  z-index: 10;
+}
+
+#indexContentPara2{
+  /* color: ; */
+  margin-left: 100px;
+  max-width: 400px;
+  font-size: 18px;
+  z-index: 10;
+}
+
+#indexContentButtons{
+  margin-top: 7%;
+  z-index: 10;
+}
+
+#indexContentButtons button{
+  border-radius: 12px;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 35px;
+  font-size: 14px;
+  width: 100px; 
+  border-color: red;
+}
+
+#button{
+  font-weight: 900;
+  /* background-color: grey; */
+}
+
+#button:hover{
+  background-color: red;
+  border-color: black;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+#aboutPage{
+  height: 100%;
+  width: 100%;
+  background-color: #00000071;
+  color: #fff;
+  background-image: url(https://media.istockphoto.com/id/1446207894/photo/cup-of-coffee-earphones-keyboard-and-notebooks-on-black-wooden-table-top-view-with-copy-space.webp?b=1&s=170667a&w=0&k=20&c=ssmMFLO1kNQaiGx7EFaXMI0-mcMsYe-pJ5arBeAdt1c=);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* opacity: 0.5; */
+}
+
+#aboutMeHeading{
+  padding-top: 5%;
+  font-size: 65px;
+  text-align: center;
+  margin-bottom: 5%;
+  color: #000;
+}
+
+#letsStartH2{
+  font-size: 47px;
+  margin-bottom: 20px;
+  color: #000;
+
+}
+
+#basicInformation{
+  margin-left: 11%;
+  text-align: center;
+  justify-content: center;
+  width: 78%;
+  padding-bottom: 5%;
+}
+
+#basicInformation p{
+  font-size: 32px;
+}
+
+
+/* --------------------------------------------------------------------------------------------------- */
+
+#projectsDiv{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+#projectHeading{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+#projectSubHeading{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+#project1{
+  border-radius: 10px;
+  height: 450px;
+  width: 400px;
+  background-color: #000;
+  background-image: url(https://images.unsplash.com/photo-1649734926695-1b1664e98842?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGFtYXpvbiUyMGxvZ298ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px black solid;
+}
+
+#project1:hover{
+  cursor: pointer;
+}
+
+#project2{
+  border: 1px black solid;
+  border-radius: 10px;
+  height: 450px;
+  width: 400px;
+  background-color: #000;
+  background-image: url(https://images.unsplash.com/photo-1531554694128-c4c6665f59c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGFwcGxlJTIwY29tcGFueSUyMGxvZ298ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#project2:hover{
+  cursor: pointer;
+}
+
+#project3{
+  border: 1px black solid;
+  border-radius: 10px;
+  height: 450px;
+  width: 400px;
+  background-color: #000;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXKzQqpV0e0rE9NwM351sx1hUkt1sDhWrRBOf8AklDug&s);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#project3:hover{
+  cursor: pointer;
+}
+
+
+/* --------------------------------------------------------------------------------------------------- */
+
+#contactPage{
+  background-color: #000;
+}
+
+#contactHeading{
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
