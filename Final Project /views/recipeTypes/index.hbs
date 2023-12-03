@@ -1,0 +1,17 @@
+<h1>{{title}}</h1>
+
+<a href="/recipeTypes/add">Add a new Recipe</a>
+
+<table class="table table-stripped table-hover">
+    <thead>
+        <th>Recipe Types</th>
+    </thead>
+
+    <tbody>
+        {{#each dataset}}
+            <tr>
+                <td>{{this.recipeType}}</td>
+            </tr>
+        {{/each}}
+    </tbody>
+</table>

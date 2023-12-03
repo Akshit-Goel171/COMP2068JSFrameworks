@@ -2,7 +2,7 @@
 <p>Welcome to {{title}}</p>
 
 
-{{!-- Adding links to add --}}
+Adding links to add
 <a href="/projects/add">Add a new Recipe</a>
 
 {{!-- Adding table to show data --}}
@@ -11,12 +11,22 @@
 {{!-- Each record will have action button to edit/delete --}}
 <table>
     <thead>
-        <th>Recipe Name</th>
         <th>Recipe Type</th>
-        <th>Recipe Ingredients</th>
+        <th>Recipe Name</th>
+        <th>Main Ingredients</th>
         <th></th>
     </thead>
     <tbody>
         {{!-- Showing elements from database --}}
+        {{#each dataset}}
+            <tr>
+                <td>{{this.recipeType}}</td>
+                <td>{{this.recipeName}}</td>
+                <td>{{this.ingredients}}</td>
+                <td></td>
+            </tr>
+        {{/each}}
+
+
     </tbody>
 </table>
