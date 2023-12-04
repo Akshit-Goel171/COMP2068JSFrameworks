@@ -15,7 +15,7 @@ router.get('/', async (req, res, next) => {
 });
 
 
-// get handler to add courses
+// get handler to add recipe type 
 router.get('/add', (req, res, next) => {
     res.render('recipeTypes/add', {title: 'Add a new recipe type'});
 })

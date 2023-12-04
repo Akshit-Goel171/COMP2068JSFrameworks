@@ -13,7 +13,7 @@ body {
  .headingHome{
   color: #007bff;
   text-align: center;
-  padding-top: 20px;
+  /* padding-top: 20px; */
   font-size: 60px;
 }
 
@@ -97,19 +97,21 @@ a:hover {
   position: absolute;
   width: 100%;
   overflow: hidden;
+  margin-top: 0;
 }
 
 
 .btn-addRecipe{
   background-color: rgb(0, 95, 255);  
-  margin-top: 200px;
+  margin-top: 160px;
   margin-left: 200px;
 }
 
 .btn-recipe{
   background-color: rgba(64, 255, 0, 0.332);
-  margin-top: 200px;
+  margin-top: 160px;
   margin-left: 500px;
+  margin-bottom: 10%;
 }
 
 
@@ -250,4 +252,52 @@ th {
 .showRecipeAddButton{
   background-color: rgba(0, 140, 255, 0.051);
   margin-left: 1200px;
+  margin-top: 30px;
 }
+
+.showRecipeAddButton:hover{
+  background-color: rgba(21, 27, 216, 0.051);
+  /* margin-left: 1200px;
+  margin-top: 30px; */
+}
+
+
+
+/* ------------------------------ styling header and footer ------------------------------ */
+/* Add these styles to your existing CSS file or create a new one */
+
+/* Header Styles */
+header {
+  background-color: #333; /* Change the background color as needed */
+  color: #fff; /* Text color */
+  padding: 15px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333; /* Change the background color as needed */
+  color: #fff; /* Text color */
+  padding: 10px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+/* Add more styles as needed for your specific design */

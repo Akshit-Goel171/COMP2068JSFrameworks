@@ -15,17 +15,21 @@
              </select>  --}}
     </fieldset>
 
+
+    {{!-- fieldset to edit the recipe name  --}}
     <fieldset>
         <label for="recipeName" class="col-2">Recipe Name: </label>
         <input name="recipeName" id="recipeName" required value="{{project.recipeName}}"/>
     </fieldset>
 
+
+    {{!-- fieldset to edit the ingredients used in recipe --}}
     <fieldset>
         <label for="ingredients" class="col-2">Ingredients Used: </label>
         <input name="ingredients" id="ingredients" value="{{project.ingredients}}"/>
     </fieldset>
 
-    {{!-- add button to trigger POST request back to server --}}
+    {{!-- adding button to trigger POST request back to server --}}
 
     <button class="offset-3 btn btn-primary"> Save </button>
 

@@ -1,13 +1,10 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+
 
 
 
 <button class="showRecipeAddButton"> <a href="/projects/add">Add a new Recipe</a> </button>
 
 {{!-- Adding table to show data --}}
-
-
 {{!-- Each record will have action button to edit/delete --}}
 <table>
     <thead>
@@ -18,18 +15,19 @@
     </thead>
     <tbody>
         {{!-- Showing elements from database --}}
-        {{#each dataset}}
-            <tr>
-                <td>{{this.recipeType}}</td>
-                <td>{{this.recipeName}}</td>
-                <td>{{this.ingredients}}</td>
-                <td>
-                    <a href="/projects/edit/{{this._id}}" class="editButtonProjects" > Edit </a>
-                    <a href="/projects/delete/{{this._id}}" class="deleteButtonProjects" onclick="confirmDeletion()"> Delete </a>
+       {{#each dataset}}
+    <tr>
+        <td>{{this.recipeType}}</td>
+        <td>{{this.recipeName}}</td>
+        <td>{{this.ingredients}}</td>
+        <td>
+            <a href="/projects/edit/{{this._id}}" class="editButtonProjects"> Edit </a>
+            <a href="/projects/delete/{{this._id}}" class="deleteButtonProjects" onclick="return confirmDeletion()"> Delete </a>
 
-                </td>
-            </tr>
-        {{/each}}
+        </td>
+    </tr>
+{{/each}}
+
 
 
     </tbody>

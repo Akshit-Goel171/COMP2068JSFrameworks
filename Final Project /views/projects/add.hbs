@@ -6,7 +6,7 @@
 
     {{!-- add form fields --}}
     <fieldset>
-        <label for="recipeType" class="col-2">Recipe Country/Type : </label>
+        <label for="recipeType" class="col-2">Recipe Type(Veg/Non-veg) : </label>
         <input name="recipeType" id="recipeType"/>
         {{!-- <select name="recipeType" id="recipeType">
             {{#each recipeType}}
@@ -15,11 +15,14 @@
              </select>  --}}
     </fieldset>
 
+
+    {{!-- fieldset for recipe name --}}
     <fieldset>
         <label for="recipeName" class="col-2">Recipe Name: </label>
         <input name="recipeName" id="recipeName" required/>
     </fieldset>
 
+    {{!-- fieldset for inputting ingredients used in the recipe  --}}
     <fieldset>
         <label for="ingredients" class="col-2">Ingredients Used: </label>
         <input name="ingredients" id="ingredients"/>

@@ -3,9 +3,39 @@
   <head>
     <title>{{title}}</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
-    <script src="public/javascripts/script.js"></script>
+    <script src="/javascripts/script.js"></script>
   </head>
   <body>
+
+
+
+    <header>
+        <h1>{{title}}</h1>
+        <p>Welcome to {{title}}</p>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/projects/add">Add a new Recipe</a></li>
+                <li><a href="/projects/">See current list of Recipes</a></li>
+                <!-- Add additional navigation links as needed -->
+            </ul>
+        </nav>
+    </header>
+
+
+
+
     {{{body}}}
+
+
+
+     <footer>
+        <p>&copy; 2023 Recipe Book. All rights reserved.</p>
+        <!-- Add additional footer content, such as links and copyright information -->
+    </footer>
+
+
+
+
   </body>
 </html>

@@ -15,6 +15,8 @@ router.get('/', (req, res, next) => {
         });
 });
 
+
+// GET handler for adding new recipe 
 router.get('/add', (req, res, next) => {
     res.render('projects/add', { title: "ADD A NEW RECIPE" });
 //     recipeType.find((err, recipeTypes) => {
@@ -34,6 +36,7 @@ router.get('/add', (req, res, next) => {
 
 
 
+// POST handler after a recipe is added 
 router.post('/add', (req, res, next) => {
     Project.create({
         recipeType: req.body.recipeType,
@@ -66,7 +69,7 @@ router.get('/delete/:_id', (req, res, next) => {
 });
 
 
-// GET handler for project edit
+
 // GET handler for project edit
 router.get('/edit/:_id', async (req, res, next) => {
     try {
@@ -90,7 +93,6 @@ router.get('/edit/:_id', async (req, res, next) => {
 
 
 
-// POST handler for /project/edit/_id
 // POST handler for /project/edit/_id
 router.post('/edit/:_id', async (req, res, next) => {
     try {
@@ -121,3 +123,7 @@ router.post('/edit/:_id', async (req, res, next) => {
 
 // export the router object to make it available in app.js
 module.exports = router;
+
+
+// Used async in post and get because the one that was taught in class was not supported in my laptop.
+//  It had something to do with the mongoose version
