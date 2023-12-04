@@ -1,4 +1,4 @@
-<h1 class="addHeading">{{title}}</h1>
+<h1>{{title}}</h1>
 
 {{!-- Create a form to send data back to the server --}}
 
@@ -6,8 +6,8 @@
 
     {{!-- add form fields --}}
     <fieldset>
-        <label for="recipeType" class="col-2">Recipe Country/Type : </label>
-        <input name="recipeType" id="recipeType"/>
+        <label for="recipeType" class="col-2">Recipe Type: </label>
+        <input name="recipeType" id="recipeType" value="{{project.recipeType}}"/>
         {{!-- <select name="recipeType" id="recipeType">
             {{#each recipeType}}
                 {{!-- <option>{{this.recipeType}</option> 
@@ -17,16 +17,16 @@
 
     <fieldset>
         <label for="recipeName" class="col-2">Recipe Name: </label>
-        <input name="recipeName" id="recipeName" required/>
+        <input name="recipeName" id="recipeName" required value="{{project.recipeName}}"/>
     </fieldset>
 
     <fieldset>
         <label for="ingredients" class="col-2">Ingredients Used: </label>
-        <input name="ingredients" id="ingredients"/>
+        <input name="ingredients" id="ingredients" value="{{project.ingredients}}"/>
     </fieldset>
 
     {{!-- add button to trigger POST request back to server --}}
 
-    <button class="addPageButton"> Save </button>
+    <button class="offset-3 btn btn-primary"> Save </button>
 
 </form>

@@ -8,6 +8,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var projectsRouter = require('./routes/projects')
 var recipeTypesRouter = require('./routes/recipeTypes')
+var hbs = require('hbs');
 
 
 
@@ -57,6 +58,11 @@ mongoose
   .catch((err) => {
     console.log('Error Message: ' + err);
   }) // catch any error message
+
+
+// Helper methods
+
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -1,22 +1,33 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+    <div id="main">
+        <img src="https://images.unsplash.com/photo-1547516508-4c1f9c7c4ec3?q=80&w=2960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+    
+        <h1 class="headingHome">RECIPE BOOK</h1>
+        <h2 class="h2Home">Embark on a Culinary Adventure: Your Recipe Oasis for Inspired Cooking and Irresistible Delights!</h2>
+    
+        
+        <button class="btn-addRecipe">
+            <a href="/projects/add" class="btn btn-primary">Add a new Recipe</a>
+        </button>
 
 
-{{!-- Adding links to add --}}
-<a href="/projects/add">Add a new Recipe</a>
+        <button class="btn-recipe">
+            <a href="/projects" class="btn btn-secondary">Explore Recipes</a>
+        </button>
 
-{{!-- Adding table to show data --}}
+        
+        
 
 
-{{!-- Each record will have action button to edit/delete --}}
-<table>
-    <thead>
-        <th>Recipe Name</th>
-        <th>Recipe Type</th>
-        <th>Recipe Ingredients</th>
-        <th></th>
-    </thead>
-    <tbody>
-        {{!-- Showing elements from database --}}
-    </tbody>
-</table>
+    </div>
+    
+</body>
+</html>

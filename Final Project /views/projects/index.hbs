@@ -2,8 +2,8 @@
 <p>Welcome to {{title}}</p>
 
 
-Adding links to add
-<a href="/projects/add">Add a new Recipe</a>
+
+<button class="showRecipeAddButton"> <a href="/projects/add">Add a new Recipe</a> </button>
 
 {{!-- Adding table to show data --}}
 
@@ -11,7 +11,7 @@ Adding links to add
 {{!-- Each record will have action button to edit/delete --}}
 <table>
     <thead>
-        <th>Recipe Type</th>
+        <th>Recipe Type </th>
         <th>Recipe Name</th>
         <th>Main Ingredients</th>
         <th></th>
@@ -23,7 +23,11 @@ Adding links to add
                 <td>{{this.recipeType}}</td>
                 <td>{{this.recipeName}}</td>
                 <td>{{this.ingredients}}</td>
-                <td></td>
+                <td>
+                    <a href="/projects/edit/{{this._id}}" class="editButtonProjects" > Edit </a>
+                    <a href="/projects/delete/{{this._id}}" class="deleteButtonProjects" onclick="confirmDeletion()"> Delete </a>
+
+                </td>
             </tr>
         {{/each}}
 
